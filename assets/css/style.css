@@ -1,0 +1,202 @@
+/* reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #0a0a0a;
+    color: #eee;
+    font-family: 'Antonio', sans-serif;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img,
+video {
+    display: block;
+    max-width: 100%;
+}
+
+/* Hero */
+.hero {
+    position: relative;
+    height: 100vh;
+    background: url('../img/bg-hero.jpg') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    padding: 0 1rem;
+}
+
+.hero-content .logo {
+    width: 140px;
+    margin-bottom: 1rem;
+}
+
+.hero-content h1 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 3rem;
+    color: #ff0055;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+.hero-content h1 span {
+    display: block;
+    font-size: 1.2rem;
+    color: #ff99aa;
+    margin-top: 0.5rem;
+}
+
+.hero-content p {
+    margin: 1.5rem 0;
+    font-size: 1.1rem;
+    color: #ddd;
+}
+
+.btn-primary {
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    border: 2px solid #ff0055;
+    color: #ff0055;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1rem;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    background-color: #eee;
+}
+
+.btn-primary:hover {
+    background: #ff0055;
+    color: #0a0a0a;
+}
+
+/* Sobre / About */
+.about {
+    padding: 4rem 10%;
+    text-align: center;
+    background: #111;
+}
+
+.about h2 {
+    font-size: 2rem;
+    color: #ff4488;
+    margin-bottom: 1rem;
+}
+
+.about p {
+    font-size: 1.1rem;
+    color: #ccc;
+    line-height: 1.7;
+}
+
+/* Tutoriais / Videos */
+.tutorials {
+    padding: 4rem 10%;
+    background: #0f0f0f;
+    text-align: center;
+}
+
+.tutorials h2 {
+    font-size: 2rem;
+    color: #ff4488;
+    margin-bottom: 1rem;
+}
+
+.tutorials p {
+    color: #bbb;
+    margin-bottom: 2rem;
+}
+
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+}
+
+.video-card {
+    background: #1f1f1f;
+    border: 1px solid #333;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s, border-color 0.3s;
+}
+
+.video-card:hover {
+    transform: translateY(-5px);
+    border-color: #ff0055;
+}
+
+.video-card video {
+    width: 100%;
+    height: auto;
+}
+
+.video-card h3 {
+    padding: 1rem;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.1rem;
+    color: #ff99aa;
+}
+
+/* CTA */
+.cta {
+    padding: 4rem 10%;
+    background: linear-gradient(135deg, #ff0055, #ff44aa);
+    color: #fff;
+    text-align: center;
+}
+
+.cta h2 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+}
+
+.cta p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
+
+/* Footer */
+footer {
+    background: #0a0a0a;
+    color: #555;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+}
+
+/* Efeito de fade-in (scroll) */
+section {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.8s ease-out;
+}
+
+section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}

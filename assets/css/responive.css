@@ -1,0 +1,84 @@
+/* --- Tablets --- */
+@media (max-width: 900px) {
+    .hero {
+        height: 85vh;
+        background-position: top;
+    }
+
+    .hero-content h1 {
+        font-size: 2.5rem;
+        letter-spacing: 2px;
+    }
+
+    .about,
+    .tutorials,
+    .cta {
+        padding: 3rem 6%;
+    }
+
+    .video-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 1.5rem;
+    }
+
+    .btn-primary {
+        padding: 0.7rem 1.8rem;
+        font-size: 0.95rem;
+    }
+}
+
+/* --- Celulares --- */
+@media (max-width: 600px) {
+    .hero {
+        height: 75vh;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .hero-content .logo {
+        width: 100px;
+        margin-bottom: 0.5rem;
+    }
+
+    .hero-content h1 {
+        font-size: 1.9rem;
+        letter-spacing: 1px;
+    }
+
+    .hero-content h1 span {
+        font-size: 1rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+        margin: 1rem 0;
+    }
+
+    .about,
+    .tutorials,
+    .cta {
+        padding: 2.5rem 8%;
+    }
+
+    .video-grid {
+        grid-template-columns: 1fr;
+        gap: 1.2rem;
+    }
+
+    .video-card h3 {
+        font-size: 1rem;
+    }
+
+    .cta h2 {
+        font-size: 1.8rem;
+    }
+
+    .cta p {
+        font-size: 1rem;
+    }
+
+    .btn-primary {
+        padding: 0.6rem 1.4rem;
+        font-size: 0.9rem;
+    }
+}
