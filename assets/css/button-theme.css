@@ -1,0 +1,26 @@
+/* Estilo botão tema */
+ button {
+  background: none;
+  border: none;
+  cursor: pointer;
+ }
+
+ .theme-btn {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    padding: 0.6rem 1.2rem;
+    background: #58C7E5;
+    color: #fff;
+    border: none;
+    font-family: 'Orbitron', sans-serif;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+    z-index: 999;
+}
+
+.theme-btn:hover {
+    background: #FFEE00;
+    color: #0a0a0a;
+}
